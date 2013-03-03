@@ -1,0 +1,39 @@
+{
+    "name": "mongoose-convention",
+    "version": "0.0.1",
+    "description": "mongoose fields convention",
+    "main" : "lib/index.js",
+    "directories" : {
+        "lib" : "./lib",
+        "test" : "./test"
+    },
+    "author": {
+        "name": "Vadim Tyukov",
+        "email": "brainreflex@gmail.com"
+    },
+    "keywords": [
+        "mongoose",
+        "convention",
+        "camelcase",
+        "underscore",
+        "dashed"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vatson/mongoose-convention"
+    },
+    "scripts": {
+        "prepublish" : "coffee -c -o lib src",
+        "watch" : "coffee -c -w  -o lib src",
+        "test": "NODE_ENV=test node_modules/.bin/mocha --timeout 10000 -R spec test/*.coffee"
+    },
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "devDependencies": {
+        "mongoose": ">= 3.4.0",
+        "mocha": "*",
+        "chai": "1.5.0",
+        "coffee-script": "1.4.0"
+    }
+}

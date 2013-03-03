@@ -1,0 +1,3 @@
+--globals name
+--compilers coffee:coffee-script
+--timeout 10s
